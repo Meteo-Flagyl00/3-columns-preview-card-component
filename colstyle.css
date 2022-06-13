@@ -3,15 +3,19 @@
 @import url('http://fonts.cdnfonts.com/css/lexend-deca');
 
 body {
-    width: 100%;
-
+    width: auto;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
 }
+
 
 .content {
-
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
+
 
 
 .Sedans {
@@ -22,7 +26,6 @@ body {
     flex-direction: column;
     border-radius: .6em 0 0 .6em;
     padding: 4em;
-
 }
 
 .SUVs {
@@ -32,7 +35,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 4em;
-
 }
 
 .Luxury {
@@ -42,8 +44,7 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 0 .6em .6em 0;
-    padding: 4em;
-   
+    padding: 4em;  
 }
 
 
@@ -71,7 +72,9 @@ p {
     margin-bottom: 2.7em;
 }
 
-button {
+
+
+.B-sedans {
     width: 10em;
     background-color: white;
     border: none;
@@ -80,18 +83,42 @@ button {
     color: hsl(31, 77%, 52%);
 }
 
-button:active {
-    background-color: hsl(0, 0%, 95%);
-    color: hsl(31, 77%, 52%);
+.B-suvs {
+    width: 10em;
+    background-color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 2em;
+    color: hsl(184, 100%, 22%);
+}
+
+.B-lux {
+    width: 10em;
+    background-color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 2em;
+    color: hsl(179, 100%, 13%);
 }
 
 
+.B-sedans:active {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: .5px solid hsla(0, 0%, 100%, 0.75);
+}
 
+.B-suvs:active {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: .5px solid hsla(0, 0%, 100%, 0.75);
+}
 
-
-
-
-
+.B-lux:active {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: .5px solid hsla(0, 0%, 100%, 0.75);
+}
 
 
 
